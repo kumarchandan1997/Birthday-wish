@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="assets/music/bg.mp3" type="audio/mpeg">
+</audio>
+<button class="btn btn-sm btn-light position-fixed top-0 end-0 m-3" id="toggleMusic">
+  🔊
+</button>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">❤️ Happy Birthday</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#memories">Lovely Memories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#surprise">A Surprise ❤️</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-white hero-section d-flex align-items-center position-relative overflow-hidden" style="min-height: 100vh; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Hero Text Content -->
+    <div class="col-md-6">
+        <h1 class="display-5 mb-4 hero-heading">Happy Birthday, My Love! 🎉</h1>
+
+        <p class="lead hero-text">You are not just a part of my life — you are my whole world. My heartbeat, my happiness, my everything. ❤️</p>
+
+        <p class="hero-text">Baby, I never want to be away from you, not even for a second. From the very first moment I saw you, I fell in love — truly, deeply, endlessly. 💞</p>
+
+        <p class="hero-text">You’re my lifeline, my forever person. Being with you feels like home, and I thank the universe every day for blessing me with you. 🌟</p>
+
+        <p class="hero-text">Yes baby, I know we are in a long-distance relationship, but that doesn’t change how I feel. Every single day, I miss you more than words can express. 🥺</p>
+
+        <p class="hero-text">Even when we fight, and I say things in anger... deep down, I cry. I regret every harsh word. I wish I could just hold you and say sorry. 😢</p>
+
+        <p class="hero-text">Our love hasn’t faded — not even a little. Distance only makes my love for you grow stronger. 💖</p>
+
+        <p class="hero-text">I just want to keep you happy forever, baby. Your smile is everything to me, and I promise I’ll always do my best to protect it. 💌</p>
+    </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/hero-image.jpeg" class="img-fluid rounded shadow" alt="Birthday Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Balloons -->
+  <img src="assets/img/balloon1.jpg" class="balloon" style="left: 10%;" alt="Balloon">
+  <img src="assets/img/balloon2.jpg" class="balloon" style="left: 25%;" alt="Balloon">
+  <img src="assets/img/balloon3.jpg" class="balloon" style="left: 45%;" alt="Balloon">
+  <img src="assets/img/balloon4.jpg" class="balloon" style="left: 65%;" alt="Balloon">
+  <img src="assets/img/balloon5.jpg" class="balloon" style="left: 80%;" alt="Balloon">
+</section>
+
+
+<!-- Lovely Memories Section -->
+<section id="memories" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Lovely Memories</h2>
+    <div id="carouselMemories" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/memory1.jpg" class="d-block w-100" alt="Memory 1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/memory2.jpg" class="d-block w-100" alt="Memory 2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/memory3.jpg" class="d-block w-100" alt="Memory 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemories" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMemories" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section id="events">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Moments Together</h2>
+    <ul class="timeline">
+      <li><strong>First Date:</strong> That magical coffee shop evening ☕</li>
+      <li><strong>Trip Together:</strong> Our beach adventure 🏖️</li>
+      <li><strong>Random Day:</strong> Laughing under the stars ✨</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Surprise Section -->
+<section id="surprise" class="bg-dark text-white text-center">
+  <div class="container">
+    <h2>A Surprise For You ❤️</h2>
+    <p class="lead mt-3">You are the light of my life. More surprises coming soon!</p>
+    <p id="countdown"></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary text-white text-center py-3">
+  Made with ❤️ by You
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

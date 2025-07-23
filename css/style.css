@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.timeline li {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.timeline li:hover {
+  transform: scale(1.02);
+}
+
+
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  width: 130px;
+  height: 130px;
+  animation: floatBalloon 6s infinite ease-in;
+  z-index: 1;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
+.balloon:nth-child(2) { left: 30%; animation-delay: 2s; }
+.balloon:nth-child(3) { left: 50%; animation-delay: 4s; }
+.balloon:nth-child(4) { left: 70%; animation-delay: 6s; }
+.balloon:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+/* Keyframe: now balloons float from bottom to way above top (past navbar) */
+@keyframes floatBalloon {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-160vh) scale(1.3); /* Exit above navbar */
+    opacity: 0;
+  }
+}
+
+
+.hero-heading {
+    color: #ff3b3f;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
