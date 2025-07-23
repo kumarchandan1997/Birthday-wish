@@ -89,11 +89,71 @@ h1, h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
   }
-
   .hero-text {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
   }
+
+  .custom-navbar {
+  background: linear-gradient(135deg, #f857a6, #ff5858); /* Romantic pink-red gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffe6f0; /* Light pastel hover */
+  text-shadow: 0 0 5px #fff;
+}
+
+.custom-navbar .navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+}
+
+
+.memory-hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.memory-hover img {
+  transition: transform 0.4s ease;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.memory-hover:hover img {
+  transform: scale(1.05);
+}
+
+.memory-caption {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 0, 102, 0.85);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  transition: bottom 0.4s ease;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.memory-hover:hover .memory-caption {
+  bottom: 0;
+}
+
+
 

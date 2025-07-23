@@ -37,3 +37,10 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+
+document.getElementById("seeMoreBtn").addEventListener("click", function () {
+    const hiddenCards = document.querySelectorAll(".memory-card.d-none");
+    hiddenCards.forEach(card => card.classList.remove("d-none"));
+    this.style.display = "none"; // Hide the button after showing all
+});
