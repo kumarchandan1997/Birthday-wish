@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #fff;
@@ -127,7 +129,7 @@ h1, h2 {
 
 .memory-hover img {
   transition: transform 0.4s ease;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -154,6 +156,41 @@ h1, h2 {
 .memory-hover:hover .memory-caption {
   bottom: 0;
 }
+
+
+.memory-caption {
+  position: absolute;
+  bottom: -100%; /* Hidden initially */
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  color: #d63384;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 15px;
+  transition: bottom 0.4s ease-in-out;
+}
+
+.memory-hover:hover .memory-caption {
+  bottom: 0;
+}
+
+/* Date Badge */
+.date-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff5e78;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 
 
 
