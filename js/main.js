@@ -39,8 +39,27 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 
 
-document.getElementById("seeMoreBtn").addEventListener("click", function () {
-    const hiddenCards = document.querySelectorAll(".memory-card.d-none");
-    hiddenCards.forEach(card => card.classList.remove("d-none"));
-    this.style.display = "none"; // Hide the button after showing all
-});
+   const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const passwordModal = new bootstrap.Modal(document.getElementById("passwordModal"));
+  const passwordInput = document.getElementById("secretPassword");
+  const passwordError = document.getElementById("passwordError");
+  const submitPassword = document.getElementById("submitPassword");
+
+
+  seeMoreBtn.addEventListener("click", function () {
+    passwordModal.show();
+  });
+
+  submitPassword.addEventListener("click", function () {
+    const enteredPassword = passwordInput.value.trim();
+    const correctPassword = "fuckyou";
+
+    if (enteredPassword === correctPassword) {
+      const hiddenCards = document.querySelectorAll(".memory-card.d-none");
+      hiddenCards.forEach(card => card.classList.remove("d-none"));
+      seeMoreBtn.style.display = "none";
+      passwordModal.hide();
+    } else {
+      passwordError.classList.remove("d-none");
+    }
+  });
