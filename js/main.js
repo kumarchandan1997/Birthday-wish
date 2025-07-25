@@ -52,7 +52,7 @@ setInterval(updateCountdown, 1000);
 
   submitPassword.addEventListener("click", function () {
     const enteredPassword = passwordInput.value.trim();
-    const correctPassword = "fuckyou";
+    const correctPassword = "c";
 
     if (enteredPassword === correctPassword) {
       const hiddenCards = document.querySelectorAll(".memory-card.d-none");
@@ -63,3 +63,5 @@ setInterval(updateCountdown, 1000);
       passwordError.classList.remove("d-none");
     }
   });
+
+  

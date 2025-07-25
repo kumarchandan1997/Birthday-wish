@@ -196,6 +196,46 @@ h1, h2 {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   }
 
+  /* Event Card Hover Effect */
+  .event-card .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(255, 59, 63, 0.4);
+  }
+
+  .event-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.event-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.event-hover:hover .event-overlay {
+  transform: translateY(0);
+}
+
+
+.event-text h5 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.event-text p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
 
 
 
